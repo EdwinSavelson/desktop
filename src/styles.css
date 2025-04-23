@@ -7,10 +7,7 @@ body{
     font-weight:200;
     font-size: 1.2em;
     margin: 0;
-    
 }
-
-
 
 #taskbar {
 
@@ -36,10 +33,15 @@ margin-left: auto;
     transform: translate(-15px, 30px);
     float: right;
   }
-
+#github-icon {
+  min-height: 6.5em;
+    touch-action: none;
+    user-select: none;
+    transform: translate(-15px, 30px);
+    float: right;
+  }
 
 .folderName {
-    
     text-align: center;
     margin-top: .3em;
 }
@@ -87,8 +89,6 @@ margin-left: auto;
 
 #window-body2{
     color:#47a62c;
-    
-   
 }
 
 .terminal-input {
