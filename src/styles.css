@@ -1,34 +1,118 @@
 
 body{
     background-color: #fad1fa;
+    background-image: url(../assets/img/pinkstatic.gif);
     font-family: "Pixelify Sans";
     color: #460c5b;
+    font-weight:200;
+    font-size: 1.2em;
+    
 }
+
+
+
+#taskbar {
+    display: flex;
+    direction: row;
+    margin: none;
+    width: 100vw;
+    background-color: #ffedff;
+    border-bottom: 2px solid #460c5b;
+}
+
+.taskbar-item{
+    padding: 0 1em 0;;
+}
+#date-time{
+margin-left: auto;
+}
+
 #drag1{
     min-height: 6.5em;
     touch-action: none;
     user-select: none;
-    transform: translate(0px, 0px);
+    transform: translate(-15px, 30px);
     float: right;
-    position: absolute;
   }
 
 
 .folderName {
-    font-weight:100;
+    
     text-align: center;
     margin-top: .3em;
 }
+#drag2{
+
+}
 
 .window{
+    display: flex;
+    flex-direction: column;
     width: 500px;
     height: 400px;
-    border: solid #743c89 2px;
+    border: solid #743c89 4px;
     background-color:#ffedff ;
 }
 
 .window-header{
+    flex-shrink: 0;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
     height: 1.3em;
-    border-bottom: #743c89 2px solid ;
-    text-align: center;
+    border-bottom: #743c89 4px solid ;
+    width: 100%;
+
 }
+.window-header-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+.close-button{
+    border: solid #743c89 3px; 
+    width: .7em;
+    height: .7em;
+    margin: .2em;
+}
+
+.window-body{
+    padding: 2em;
+}
+
+#window-body2{
+    color:#47a62c;
+    
+   
+}
+
+.terminal-input {
+    background-color:#20042a;
+    background-image: url(../assets/img/stars4.gif);
+
+    white-space: pre;
+    outline: none;
+    caret-color: transparent; /* hide native caret */
+    color: #47a62c;;
+    flex-grow: 1;
+    overflow: auto; /* if content might overflow */
+  }
+  
+  .cursor-block {
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background: #47a62c;;
+    animation: blink 1s step-end infinite;
+    vertical-align: bottom;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  

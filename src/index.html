@@ -17,14 +17,34 @@
 
 <body>
     <div id = "desktop">
-        <div id="drag1" class="draggable resizable">
+        <div id = "taskbar">
+            <div class = "taskbar-item">ES</div>
+            <div class = "taskbar-item">File</div>
+            <div class = "taskbar-item">Edit</div>
+            <div class = "taskbar-item">View</div>
+            <div class = "taskbar-item">Help</div>
+            <div class= "taskbar-item" id = "date-time"></div>
+        </div>
+        <div id="drag1" class="draggable">
             <img src="../assets/img/Folder.png" alt="">
             <p class="folderName">Folder</p>
         </div>
 
 
-        <div id="drag2" class="window draggable">
-            <div class="window-header">Folder</div>
+        <div id="drag2" class="window draggable-resizable">
+            <div class="window-header">
+                <div class="close-button"></div>
+                <div class = "window-header-text">Folder</div>
+            </div>
+            <div class = "window-body" id ="window-body1"></div>
+        </div>
+        <div id="terminal" class="window draggable-resizable">
+            <div class="window-header">
+                <div class="close-button"></div>
+                <div class = "window-header-text">Terminal</div>
+            </div>
+            <div class = "terminal-input window-body"  id = "terminal-input"><span id="typed-text"></span><span class="cursor-block"></span></div>
+
         </div>
     </div>
 </body>
