@@ -56,7 +56,7 @@ interact('.draggable')
 
 window.dragMoveListener = dragMoveListener
 
-var txtFile = "<h1>hi! my name is eddie</h1>";
+var txtFile = "<h1>Some odd words:</h1><p>oleaginous, transigence, anathema, paroxysm</p>";
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("window-body1").innerHTML = txtFile;
